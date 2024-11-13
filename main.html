@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2e4d0;
+            color: #333;
+        }
+        .background-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 4em;
+            color: #d4a017; /* Light gray and transparent */
+            display: block;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .background-text span {
+            margin: 0.5em;
+            font-family: serif;
+            position: absolute;
+            top: calc(100% * var(--y));
+            left: calc(100% * var(--x));
+            transform: rotate(calc(360deg * var(--r)));
+            font-size: calc(3em + 2 * var(--s));
+            opacity: 0.2;
+        }
+        .container {
+            text-align: center;
+        }
+        img {
+            max-width: 150px; /* Set a fixed size for the image */
+            height: auto;
+            border-radius: 50%; /* Makes the image circular */
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .contact-info {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-text">
+        <span style="top: 1%; left: 2%; transform: rotate(-15deg); font-size: 3em;">Å</span>
+        <span style="top: 20%; left: 60%; transform: rotate(30deg); font-size: 2.5em;">É</span>
+        <span style="top: 30%; left: 10%; transform: rotate(-10deg); font-size: 3em;">Ü</span>
+        <span style="top: 40%; left: 80%; transform: rotate(25deg); font-size: 3em;">ß</span>
+        <span style="top: 50%; left: 40%; transform: rotate(-20deg); font-size: 2.2em;">Ç</span>
+        <span style="top: 60%; left: 10%; transform: rotate(15deg); font-size: 2.5em;">Ø</span>
+        <span style="top: 70%; left: 75%; transform: rotate(-5deg); font-size: 3.1em;">Ð</span>
+        <span style="top: 80%; left: 25%; transform: rotate(10deg); font-size: 1.8em;">æ</span>
+        <span style="top: -22%; left: 40%; transform: rotate(-30deg); font-size: 3.2em;">ñ</span>
+    </div>
+    <div class="container">
+        <img src="logo.jpg" alt="Coming Soon">
+        <h1>Coming Soon</h1>
+        <p>We're working hard to bring you an exciting new language community. Stay tuned!</p>
+        <p class="contact-info">For updates, reach out at: <a href="langbiteofficial@gmail.com">langbiteofficial@gmail.com</a></p>
+    </div>
+</body>
+</html>
